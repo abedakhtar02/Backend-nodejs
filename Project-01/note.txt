@@ -1,0 +1,7 @@
+schema - defines the structure.
+    schema - model
+    using model we do CRUD operations
+        create
+        read
+        update
+        delete
