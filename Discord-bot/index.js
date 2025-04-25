@@ -22,5 +22,5 @@ client.on("interactionCreate", (interaction) =>{
 });
 
 client.login(
-  // "--TOKEN HERE--"
+  // "--"
 );

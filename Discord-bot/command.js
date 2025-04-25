@@ -8,8 +8,9 @@ const commands = [
   ];
 
 
-  const rest = new REST({ version: '10' }).setToken
-//   ("--TOKEN HERE--");
+/*  const rest = new REST().setToken
+  ("--");
+  */
 
   try {
     console.log('Started refreshing application (/) commands.');
