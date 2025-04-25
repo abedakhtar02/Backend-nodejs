@@ -22,5 +22,5 @@ client.on("interactionCreate", (interaction) =>{
 });
 
 client.login(
-  "MTM2NTAyNzQ0MTMxMDk1NzYyOQ.G_Myf6.hKEJU09wIVUtFJSsldNFxGWiUuDZap9PYDTUjY"
+  // "--TOKEN HERE--"
 );
