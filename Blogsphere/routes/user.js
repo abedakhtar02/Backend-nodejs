@@ -8,6 +8,9 @@ router.get("/signin", (req, res) => {
 router.get("/signup", (req, res) => {
   return res.render("signup");
 });
+router.get("/logout", (req, res) => {
+  res.clearCookie("token").redirect("/");
+});
 router.post("/signup", async (req, res) => {
   const { fullName, email, password } = req.body;
   await User.create({
@@ -22,9 +25,9 @@ router.post("/signin", async (req, res) => {
 
   try {
     const token = await User.matchPasswordAndGenerateToken(email, password);
-    return res.cookie("Token", token).redirect("/");
+    return res.cookie("token", token).redirect("/");
   } catch (error) {
-    return res.render("signin", {error:"Incorrect email Id or Password"});
+    return res.render("signin", { error: "Incorrect email Id or Password" });
   }
 });
 
